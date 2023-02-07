@@ -1,0 +1,34 @@
+@import "assets/styles/variables";
+
+.input-field {
+    border: none!important;
+    border-bottom: 3px solid #e4e6eb!important;
+    border-radius: unset!important;
+
+    box-sizing: unset!important;
+    height: 25px;
+    padding: 12px 0!important;
+    margin-top: 18px;
+    font-size: 16px;
+
+    transition: all 0.35s ease-in-out!important;
+
+    &:focus {
+        box-shadow: none!important;
+        border-bottom-color: black!important;
+    }
+}
+
+.label {
+    color: $text-color-grey!important;
+    transform: translateY(-39px);
+    transition: all 0.35s ease-in-out!important;
+}
+
+.input-field:focus ~.label{
+    transform: translateY(-70px);
+}
+
+.input-active ~.label {
+    transform: translateY(-70px);
+}

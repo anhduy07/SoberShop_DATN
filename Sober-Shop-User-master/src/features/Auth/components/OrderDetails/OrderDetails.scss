@@ -1,0 +1,56 @@
+@import "assets/styles/variables";
+
+.order-details {
+    .back {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    &__main {
+        padding: 30px 0;
+        margin: 16px 0;
+
+        p {
+            margin: 0;
+            padding: 16px 0;
+            
+            a {
+                color: $text-color-black;
+                text-decoration: none;
+                transition: all 0.35s ease-out;
+    
+                &:hover {
+                    font-weight: 600;
+                }
+            }
+        }
+
+        &__table {
+            padding: 15px;
+
+            .row {
+                border-bottom: 1px solid $border-color-grey;
+            }
+
+            &__bolder {
+
+                p {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    &__address {
+        padding-bottom: 40px;
+
+        &__card {
+            margin-top: 20px;
+            padding: 36px;
+            border: 1px solid $border-color-grey;
+        }
+
+    }
+}

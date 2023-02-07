@@ -1,0 +1,13 @@
+.user {
+    
+    & > * {
+        font-family: 'Poppins', sans-serif!important;
+    }
+
+    &__menu {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+        background-color: #f1f2f4;
+    }
+}

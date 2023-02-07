@@ -1,0 +1,36 @@
+@import "assets/styles/variables";
+
+.order-list {
+    padding: 20px;
+
+    .row {
+        border-bottom: 1px solid $border-color-grey;
+    }
+
+    p {
+        margin: 0;
+        padding: 14px 0!important;
+
+        a {
+            color: $text-color-black;
+            text-decoration: none;
+            transition: all 0.35s ease-out;
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+
+    button {
+        background-color: $btn-bgc-black!important;
+        color: $text-color-white!important;
+        padding: 20px 30px;
+    }
+
+    &__head, &__index {
+        p {
+            font-weight: 600;
+        }
+    }
+}

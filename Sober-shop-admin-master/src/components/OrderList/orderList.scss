@@ -1,0 +1,39 @@
+.order-list {
+
+    & h2 {
+        margin-bottom: 20px;
+    }
+
+    &__detail {
+        background-color: var(--main-bg);
+        box-shadow: var(--box-shadow);
+
+        th {
+            font-weight: 600;
+        }
+
+        .item-img {
+            display: flex;
+
+            & img {
+                width: 50px;
+                height: 60px;
+                margin-right: 5px;
+            }
+        }
+
+        .item-action {
+            display: flex;
+            align-items: center;
+    
+            .icon-del {
+                color: var(--main-color);
+                margin-right: 5px;
+            }
+    
+            .icon-edit {
+                color: var(--main-color-green);
+            }
+        }
+    }
+}

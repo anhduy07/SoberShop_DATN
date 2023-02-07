@@ -1,0 +1,144 @@
+@import "assets/styles/variables";
+
+.user-carts {
+    min-height: 400px;
+    margin-top: 40px;
+    .goto-shop {
+        text-align: center;
+    }
+
+    .row {
+        border-bottom: 1px solid $border-color-grey;
+    }
+
+    &__head {
+        
+        p {
+            font-weight: 600;
+        }
+    }
+
+    &__item {
+        padding: 20px 0!important;
+
+        & > * {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            margin: 0;
+            padding: 12px 0;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        &__product {
+            display: flex;
+            align-items: center;
+
+            &__frames {
+                width: 100px;
+                position: relative;
+                display: block;
+
+                &::before {
+                    content: '';
+                    padding-top: $image-aspect-ratio!important;
+                    width: 100%;
+                    display: block;
+                    background-color: black;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                padding-left: 50px!important;
+            }
+        }
+
+        &__quantity {
+
+            p {
+                padding: 6px 12px!important;
+                border: 1px solid $border-color-grey;
+                transition: all 0.35s ease-in;
+
+                button {
+                    background-color: transparent!important;
+                    box-shadow: none!important;
+                    border: none;
+                    color: $text-color-grey;
+                    font-size: 30px;
+
+                    &:hover {
+                        color: $text-color-black!important;
+                    }
+                }
+
+                span {
+                    margin: 0 20px;
+                }
+
+
+                &:hover {
+                    border-color: black;
+                }
+
+            }
+        }
+
+        &__subtotal {
+            justify-content: space-between;
+
+            span {
+                font-size: 30px;
+                cursor: pointer;
+                color: $text-color-grey;
+
+                &:hover {
+                    color: $text-color-black;
+                }
+            }
+        }
+    }
+
+    &__btn-submit {
+        background-color: $btn-bgc-black!important;
+        width: 60%;
+        padding: 24px 0!important;
+        color: $text-color-white!important;
+        box-shadow: none!important;
+        margin: 30px 0;
+    }
+
+    .wrapper-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__total {
+        padding: 40px;
+        border: 1px solid $border-color-grey;
+
+        h3 {
+            margin-bottom: 30px;
+        }
+
+        &__card {
+
+            p {
+                margin: 0;
+                padding: 16px 0;
+                font-weight: 600;
+            }
+        }
+    }
+}

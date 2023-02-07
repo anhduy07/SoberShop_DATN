@@ -1,0 +1,20 @@
+.category-item {
+    width: 300px;
+    position: relative;
+
+    & img {
+        width: 300px;
+        height: 400px;
+    }
+
+    &__name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+}

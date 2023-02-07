@@ -1,0 +1,66 @@
+
+:root {
+    --main-bg: #ffffff;
+    --second-bg: #fafafb;
+    --text-color: #95afc0;
+    --text-white: #fff;
+    --text-brownblack: #393434;
+    --main-color: #ff8084;
+    --second-color: #f8a5c2;
+    --box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+
+    --main-bg-light: #ffffff;
+    --second-bg-light: #fafafb;
+    --text-color-light: #95afc0;
+    --box-shadow-light: 0px 8px 24px rgba(149, 157, 165, 0.2);
+
+    --main-bg-dark: #2d2d2d;
+    --second-bg-dark: #202020;
+    --text-color-dark: #bbbbbb;
+    --box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+    --main-color-pink: #ff8084;
+    --second-color-pink: #f8a5c2;
+
+    --main-color-blue: #38ada9;
+    --second-color-blue: #62b4ff;
+
+    --main-color-red: #fb0b12;
+    --second-color-red: #ff4a6b;
+
+    --main-color-green: #019707;
+    --second-color-green: #4caf50;
+
+    --main-color-orange: #d68102;
+    --second-color-orange: #fca11a;
+} 
+
+.bg-pink {
+    background-color: var(--main-color-pink);
+}
+.bg-orange {
+    background-color: var(--main-color-orange);
+}
+.bg-blue {
+    background-color: var(--main-color-blue);
+}
+.bg-green {
+    background-color: var(--second-color-green);
+}
+.bg-red {
+    background-color: var(--main-color-red);
+}
+
+.color-pink {
+    color: var(--main-color-pink);
+}
+.color-orange {
+    color: var(--main-color-orange);
+}
+.color-blue {
+    color: var(--main-color-blue);
+}
+.color-green {
+    color: var(--second-color-green);
+}
+

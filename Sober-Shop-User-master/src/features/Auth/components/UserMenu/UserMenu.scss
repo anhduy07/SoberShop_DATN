@@ -1,0 +1,53 @@
+@import "assets/styles/variables"; 
+
+.user-menu {
+    display: flex;
+    margin: 0 auto;
+
+    &__item {
+        font-weight: 500;
+        font-size: 20px;
+        padding: 20px 5px;
+        margin: 0 35px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.35s ease-out;
+        
+        a {
+            text-decoration: none;
+            color: $text-color-grey;
+            transition: all 0.35s ease-out;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            transition: all 0.35s ease-out;
+        }
+
+        &:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        &:hover a {
+            color: $text-color-black!important;
+        }
+    }
+    
+    &__active {
+        &::after {
+            width: 100%;
+            left: 0;
+        }
+
+        a {
+            color: $text-color-black!important;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.member-item-main {
+    width: 320px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 10px;
+
+    .member-avt {
+        height: 100%;
+        & img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            object-fit: cover;
+        }
+    }
+    .member-info {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: transparent;
+        width: 100%;
+        z-index: 1000;
+        transition: all 0.35s ease-out;
+
+        &-detail {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 80%;
+            padding: 2px;
+            background-color: #fff;
+
+            text-align: center;
+            font-weight: bold;
+            font-family: "Dancing Script", sans-serif;
+
+            transition: all 0.35s ease-out;
+
+            & p:first-child {
+                font-size: 28px;
+            }
+
+            & p:last-child {
+                font-size: 20px;
+            }
+        }
+
+        &-social {
+            transition: all 0.35s ease-out;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    
+            &-icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                margin: 10px;
+                color: #fff;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transform: scale(0);
+                transition: all 0.35s ease-out;
+                .icon {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    &:hover .member-info {
+        background-color: rgba(0, 0, 0, 0.603);
+
+        &-social-icon {
+            transform: scale(1);
+        }
+    }
+
+    &:hover .member-info-detail {
+        background: unset;
+        color: #fff;
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

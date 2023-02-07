@@ -1,0 +1,116 @@
+.sidebar {
+    min-width: 300px;
+    height: calc(100vh - 80px);
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: var(--main-bg);
+    box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+    overflow-y: scroll;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--second-color);
+        border-radius: 30px;
+        opacity: 0.7;
+    }
+
+    &.active {
+        transform: translateX(0);
+    }
+
+    &-logo {
+        margin-top: 30px;
+        text-align: center;
+
+        & img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .sidebar-info {
+            
+            & h2 {
+                margin: 10px 0;
+                color: var(--main-color);
+            }
+
+            & p {
+                color: var(--text-color);
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &-item {
+        padding: 0 20px;
+
+        &__inner {
+            padding: 15px 10px;
+            display: flex;
+            align-items: center;
+            color: var(--text-brownblack);
+            transition: color 0.3s ease-in;
+
+            & span {
+                margin-left: 10px;
+                text-transform: capitalize;
+            }
+
+            &:hover {
+                color: var(--main-color);
+            }
+
+            &.active {
+                border-radius: 15px;
+                background-image: linear-gradient(
+                    to right,
+                    var(--main-color),
+                    var(--second-color)
+                );
+                color: var(--text-white);
+            }
+
+            .icon-right {
+                position: absolute;
+                right: 30px;
+            }
+        }
+
+        &__list {
+            color: var(--main-bg-dark);
+            padding-left: 50px;
+
+            & li {
+                margin: 15px 0;
+                transition: 0.2s ease;
+                position: relative;
+
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+
+            & a {
+                color: #888888;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        transform: translateX(-300px);
+    }
+}

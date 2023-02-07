@@ -1,0 +1,178 @@
+@import "assets/styles/variables";
+
+.ProductReview {
+    width: 100%;
+    margin-bottom: 100px;
+    
+    .product-rev-container {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+
+        .product-rev-tab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+
+            .product-rev-title {
+                margin: 0px 20px;
+                font-size: 18px;
+                font-weight: 500;
+                color: $color-gray;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    background: $color-black;
+                    right: 0;
+                    bottom: -5px;
+                    transition: all 0.5s;
+                }
+
+                &:hover::after {
+                    animation: active_line 0.5s ease-in;
+                    width: 100%;
+                    left: 0;
+                }
+            }
+
+            .active {
+                color: $color-black;
+
+                &::after {
+                    animation: none!important;
+                    width: 100%;
+                    bottom: -5px;
+                }
+                
+            }
+
+            span {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background-color: #ddd;
+                color: $color-gray;
+                padding: 3px 6px;
+                font-size: 10px;
+                margin-left: 5px;
+
+                &.span-active {
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+        }
+
+        .product-rev-content {
+            width: 100%;
+
+            .product-rev-des {
+                color: $color-gray;
+                font-size: 16px;
+            }
+
+            .product-rev-list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+
+                .product-rev-item {
+                    width: 60%;
+                    display: flex;
+                    justify-content: start;
+                    margin-bottom: 30px;
+
+                    .user-avt img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                    }
+
+                    .user-info {
+                        margin-left: 15px;
+                        text-align: left;
+
+                        .user-name {
+                            font-weight: 500;
+                        }
+
+                        .user-cmt {
+                            color: $color-gray;
+                            margin: 10px 0;
+                        }
+
+                        .date {
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                .product-rev-cmt { 
+                    width: 60%;
+                    text-align: left;
+
+                    &>p:first-child {
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-top: 50px;
+                    }
+
+                    .rev-form {
+
+                        & input{
+                            border: none;
+                            border-bottom: 2px solid rgb(158, 158, 158);
+                            color: $color-black;
+                            font-size: 14px;
+                            height: 40px;
+                            width: 100%;
+                        }
+
+                        .form-title {
+                            color: $color-gray;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                        }
+
+                        .flex {
+                            display: flex;
+                            margin-bottom: 50px;
+
+                            & div:first-child {
+                                width: 100%;
+                            }
+
+                            & div:last-child {
+                                width: 100%;
+                                margin-left: 15px;
+                            }
+                        }
+
+                        .submit-btn {
+                            background-color: $color-black;
+                            color: $color-white;
+                            padding: 12px 48px;
+                            display: flex;
+                            margin: 0 auto;
+                            opacity: 0.85;
+                            transition: 0.35s ease-in;
+                            border: none;
+
+                            &:hover {
+                                opacity: 1;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

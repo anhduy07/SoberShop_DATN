@@ -1,0 +1,84 @@
+.Newsletter {
+  width: 100%;
+  padding: 50px 0;
+
+  .newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+
+      .newsletter-title {
+          font-size: 28px;
+          margin-bottom: 20px;
+          color: #333;
+          font-weight: 600;
+          font-family: "Poppins", sans-serif;
+      }
+
+        .newsletter-small {
+            margin-bottom: 35px;
+            color: #777;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .newsletter-form {
+            width: 80%;
+            display: flex;
+            align-items: center;
+
+            .newsletter-input {
+                flex-grow: 1;
+                height: 50px;
+                border: none;
+                transition: .7s;
+                border-bottom: 2px #ddd solid;
+                padding: 0 20px;
+                margin-right: 10px;
+                font-size: 14px;
+              }
+            
+            .newsletter-input:hover {
+              border-bottom: 2px #111 solid;
+            }
+            
+            .newsletter-input:focus {
+              outline: none !important;
+            }
+
+            .newsletter-btn {
+              width: 100px;
+              height: 50px;
+              margin-left: 10px;
+              background-color: #000;
+              color: #fff;
+              border: none;
+              font-size: 16px;
+              opacity: 0.85;
+              transition: 0.5s;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+
+        }
+    }
+}
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  

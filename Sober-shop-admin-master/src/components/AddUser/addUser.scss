@@ -1,0 +1,41 @@
+.add-user {
+
+    & h2 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__main {
+        background-color: var(--main-bg);
+        box-shadow: var(--box-shadow);
+        border-radius: 15px;
+        padding: 15px 15px 60px 15px;
+        
+        .field-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 5px 0;
+
+            & p {
+                width: 250px;
+            }
+
+            & span {
+                color: red;
+                margin-left: 5px;
+            }
+        }
+
+        .save-btn {
+            width: 150px;
+            background-color: var(--main-color);
+            color: var(--text-white);
+            text-transform: uppercase;
+            padding: 10px 12px;
+            text-align: center;
+            // float: right;
+            border-radius: 5px;
+        }
+    }
+}
